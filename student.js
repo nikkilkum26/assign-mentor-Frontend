@@ -8,7 +8,7 @@ async function createStudent() {
 
         }
 
-        await fetch("http://localhost:3001/students",{
+        await fetch("https://assignmentorbe.herokuapp.com/students",{
             method:"POST",
             body:JSON.stringify(data),
             headers:{
@@ -29,7 +29,7 @@ async function getStud()
             let data;
             try
             {
-                let f=await fetch("http://localhost:3001/students");
+                let f=await fetch("https://assignmentorbe.herokuapp.com/students");
                 data = await f.json();
               
                 for(let i=0;i<data.length;i++)

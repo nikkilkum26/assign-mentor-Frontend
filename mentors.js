@@ -7,7 +7,7 @@ async function createMentor() {
 
         }
 
-        await fetch("http://localhost:3001/mentors",{
+        await fetch("https://assignmentorbe.herokuapp.com/mentors",{
             method:"POST",
             body:JSON.stringify(data),
             headers:{
@@ -28,7 +28,7 @@ async function getMentor()
             let data;
             try
             {
-                let f=await fetch("http://localhost:3001/mentors");
+                let f=await fetch("https://assignmentorbe.herokuapp.com/mentors");
                 data = await f.json();
               
                 for(let i=0;i<data.length;i++)

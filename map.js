@@ -8,7 +8,7 @@ async function mapVal()
                     mentorId:document.getElementById("mentorname").value
                 }
                 mentorId=document.getElementById("mentorname").value;
-                await fetch("http://localhost:3001/merge",{
+                await fetch("https://assignmentorbe.herokuapp.com/merge",{
                     method:"PUT",
                     body:JSON.stringify(data),
                     headers:{
@@ -27,7 +27,7 @@ async function mapVal()
         {
             try
             {
-                let mentorfetch=await fetch("http://localhost:3001/merge/"+mentorId);
+                let mentorfetch=await fetch("https://assignmentorbe.herokuapp.com/merge/"+mentorId);
                 mentorData=await mentorfetch.json();
                 
                 for(let i=0;i<mentorData.students.length;i++)
