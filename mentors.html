@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container-fluid">
+        <form style="border-width: 0cm;" onsubmit="createMentor()">
+            <div class="row">
+                <div class="col col-5"><label for="mentorname"><h3>Mentor Name</h3></label></div>
+                <div class="col col-5"><br>
+                    <input  type="text" id="getval" placeholder="Name" required/>
+                </div>
+                <br>
+            </div>
+   
+    <div class="row">
+        <div class="col col-10" ><button type="submit" class="btn btn-warning">create</button></div>
+    </div>
+    </form>
+    </div>
+</div>
+    <div class="container-fluid">
+
+        <table id="student" style="width:75%;">
+        <tr>
+            <th>ID</th>
+            <th>Mentor Name</th>
+            <th>Students Name</th>
+        </tr>
+        
+        </table>
+
+    </div>
+    <script src="mentors.js"></script>
+    </body>
+    
+    </html>
